@@ -25,6 +25,9 @@ figure {
   padding: 0;
   margin: 0;
 }
+img:not([alt]) {
+  border: 1rem solid red;
+} /** DEBUGGER **/
 body {
   background-color: var(--white);
   color: var(--dgray);
@@ -118,9 +121,6 @@ body {
 .list .icon:nth-child(1) {
   margin-right: 10px;
 }
-.logo-footer-margin {
-  margin-bottom: 20px;
-}
 .contact-footer-margin {
   margin: 9px 0;
 }
@@ -181,7 +181,6 @@ body {
 .button {
   color: var(--white);
   background-color: var(--blue);
-  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
@@ -249,6 +248,7 @@ body {
   display: flex;
   flex-direction: column;
   font-style: normal;
+  margin-bottom: 20px;
 }
 .footer-social {
   margin-left: 70px;
@@ -481,7 +481,7 @@ body {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.close-button {
+.modal__close-button {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -623,10 +623,10 @@ label > p {
   flex-direction: column;
   margin-left: auto;
 }
-.newsletter > form {
+.newsletter__form {
   display: flex;
 }
-.newsletter-input {
+.newsletter__input {
   width: 358px;
   height: 50px;
   color: rgba(255, 255, 255, 0.6);
@@ -636,7 +636,7 @@ label > p {
   background-color: transparent;
 }
 
-.newsletter-submit {
+.newsletter__button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -654,8 +654,23 @@ label > p {
   height: 50px;
   width: 200px;
 }
-.newsletter-icon {
+.newsletter__icon {
   margin-left: 24px;
 }
 
 /* NEWSLETTER END */
+
+/* 660 */
+
+.btn {
+  color: var(--white);
+  background-color: var(--blue);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88em;
+  letter-spacing: 0.06em;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
