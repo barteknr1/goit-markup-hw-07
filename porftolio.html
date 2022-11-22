@@ -7,9 +7,12 @@
     <title>WebStudio</title>
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -18,7 +21,7 @@
   <body>
     <!-- ========================= HEADER ========================= -->
 
-    <header class="header-border">
+    <header class="border-bottom">
       <div class="header-container">
         <nav class="header-container__nav">
           <a class="logo link" href="./index.html"
@@ -27,12 +30,12 @@
           >
           <ul class="list menu">
             <li>
-              <a class="link menu__link" href="./index.html">Agencja</a>
+              <a class="link menu__link" href="./index.html"
+                >Agencja</a
+              >
             </li>
             <li>
-              <a class="link menu__link active-page" href="./porftolio.html"
-                >Portfolio</a
-              >
+              <a class="link menu__link active-page" href="./porftolio.html">Portfolio</a>
             </li>
             <li><a class="link menu__link" href="#">Kontakt</a></li>
           </ul>
@@ -40,7 +43,7 @@
         <ul class="contact list">
           <li>
             <a class="link contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16px" height="12px">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-contact-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -48,7 +51,7 @@
           </li>
           <li>
             <a class="link contact__link" href="tel:+48111111111">
-              <svg class="contact__icon" width="10px" height="16px">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-contact-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -66,7 +69,6 @@
           <!-- ========================= FILTER ========================= -->
 
           <div class="filters">
-            <!-- GIT -->
             <ul class="list">
               <li>
                 <button class="filters__button" type="button">Wszystkie</button>
@@ -90,7 +92,6 @@
           <!-- ========================= PROJECTS ========================= -->
 
           <ul class="list projects">
-            <!-- GIT -->
             <li>
               <a class="projects__box link" href="#">
                 <div class="projects__overlay-container">
@@ -301,7 +302,6 @@
                 ><span class="logo__web">Web</span
                 ><span class="logo__studio logo__studio--white">Studio</span></a
               >
-              <!-- GIT -->
             </li>
           </ul>
           <address class="address">
@@ -380,8 +380,6 @@
           </ul>
         </div>
         <div class="newsletter">
-          <!-- GIT -->
-
           <h4 class="newsletter__header">Zapisz się do newslettera</h4>
           <form class="newsletter__form">
             <label>
