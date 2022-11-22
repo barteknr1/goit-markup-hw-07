@@ -5,12 +5,6 @@
       "format": "compressed",
       "savePath": "/css"
     },
-    {
-      "format": "expanded",
-      "extensionName": ".css",
-      "savePath": "/css",
-      "savePathReplacementPairs": null
-    }
   ],
   "liveSassCompile.settings.excludeList": [
     "/**/node_modules/**",
